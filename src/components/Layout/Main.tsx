@@ -1,5 +1,5 @@
 import { styled } from 'linaria/react';
-import { vars } from '../../../globals';
+import { vars } from '../../globals';
 
 export const Main = styled.main`
 	background: ${vars.colors.background};

@@ -1,6 +1,6 @@
 import React, { useCallback } from 'react';
 import { styled } from 'linaria/react';
-import { vars } from '../../../globals';
+import { vars } from '../../globals';
 
 interface Props {
 	collapsed: boolean;

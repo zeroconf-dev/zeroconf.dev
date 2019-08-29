@@ -1,6 +1,5 @@
 import { styled } from 'linaria/react';
-import { vars } from '../../../globals';
-// import React from 'react';
+import { vars } from '../../globals';
 
 // interface Props {}
 
