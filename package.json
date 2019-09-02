@@ -4,14 +4,21 @@
 	"private": true,
 	"dependencies": {
 		"color": "^3.1.2",
+		"farce": "^0.2.8",
+		"found": "^0.4.7",
+		"found-relay": "^0.4.1",
 		"react": "^16.9.0",
-		"react-dom": "^16.9.0"
+		"react-dom": "^16.9.0",
+		"react-relay": "^5.0.0",
+		"relay-runtime": "^5.0.0"
 	},
 	"scripts": {
 		"start": "craco start",
 		"build": "craco build",
 		"test": "craco test",
-		"eject": "react-scripts eject"
+		"eject": "react-scripts eject",
+		"relay": "relay-compiler --language typescript --src ./src --schema schema.graphql --extensions ts tsx",
+		"relay:watch": "relay-compiler --watch --language typescript --src ./src --schema schema.graphql --extensions ts tsx"
 	},
 	"eslintConfig": {
 		"extends": "react-app"
@@ -35,9 +42,15 @@
 		"@types/node": "12.7.2",
 		"@types/react": "16.9.2",
 		"@types/react-dom": "16.9.0",
+		"@types/react-relay": "^5.0.0",
+		"@types/relay-runtime": "^5.0.3",
+		"babel-plugin-relay": "^5.0.0",
 		"core-js": "2.6.9",
+		"graphql": "^14.5.4",
 		"linaria": "^1.3.1",
 		"react-scripts": "3.1.1",
+		"relay-compiler": "^5.0.0",
+		"relay-compiler-language-typescript": "^4.7.0",
 		"typescript": "3.5.3"
 	}
 }

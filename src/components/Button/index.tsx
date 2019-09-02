@@ -17,7 +17,7 @@ export const Button = styled.button<Props>`
 	line-height: 1em;
 	margin: 0 0.25em 0 0;
 	outline: 0;
-	padding: ${typography.standardPadding / 2}em ${typography.standardPadding}em;
+	padding: ${typography.compactPadding} ${typography.standardPadding};
 	vertical-align: baseline;
 	text-align: center;
 	text-decoration: none;

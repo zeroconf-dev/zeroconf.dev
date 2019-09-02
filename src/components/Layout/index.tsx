@@ -41,7 +41,7 @@ export const Layout: React.FC<Props> = props => {
 		<Grid collapsed={collapsed} {...gridProps}>
 			<Topbar />
 			<Mainmenu collapsed={collapsed} onCollapseChange={onCollapseChange} />
-			<Main />
+			<Main>{children}</Main>
 			<Sidebar />
 			<Footer />
 		</Grid>

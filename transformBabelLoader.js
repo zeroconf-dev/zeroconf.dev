@@ -5,6 +5,8 @@ module.exports = (loader, env) => ({
 		{
 			loader: loader.loader,
 			options: {
+				...loader.options,
+				plugins: [...loader.options.plugins, 'relay'],
 				presets: [loader.options.presets[0], 'linaria/babel'],
 			},
 		},

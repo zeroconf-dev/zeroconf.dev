@@ -6,5 +6,5 @@ export const Main = styled.main`
 	grid-area: main;
 	flex: 1 0 0;
 	min-width: 0;
-	padding: ${vars.typography.standardPadding}px;
+	padding: ${vars.typography.standardPadding};
 `;

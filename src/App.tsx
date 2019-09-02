@@ -4,8 +4,10 @@ import { injectGlobalStyles, globals } from './globals';
 
 injectGlobalStyles(globals);
 
-const App: React.FC = () => {
-	return <Layout id="app" />;
+interface Props {}
+
+const App: React.FC<Props> = props => {
+	return <Layout id="app">{props.children}</Layout>;
 };
 
 export default App;

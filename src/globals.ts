@@ -20,8 +20,9 @@ $textInverted: #FFFFFF;
 */
 
 export const typography = {
-	fontSize: 1, // rem
-	standardPadding: 1.5, // em
+	fontSize: '1rem',
+	compactPadding: '0.75em',
+	standardPadding: '1.5em',
 };
 
 const colors = {
@@ -69,6 +70,7 @@ export const vars = {
 		grayLight: `var(--grayLightColor)`,
 	},
 	typography: {
+		compactPadding: `var(--compactPadding)`,
 		fontSize: `var(--fontSize)`,
 		standardPadding: `var(--standardPadding)`,
 	},
@@ -78,6 +80,7 @@ export const globals = css`
 	:global() {
 		html {
 			--fontSize: ${typography.fontSize};
+			--compactPadding: ${typography.compactPadding};
 			--standardPadding: ${typography.standardPadding};
 
 			--lighShadeColor: ${colors.lighShade.toString()};
@@ -108,6 +111,7 @@ export const globals = css`
 		}
 
 		body {
+			font-family: 'Open Sans', sans-serif;
 			margin: 0;
 			padding: 0;
 			height: 100vh;
@@ -115,6 +119,11 @@ export const globals = css`
 
 		#root {
 			height: 100vh;
+		}
+
+		@font-face {
+			font-family: 'Open Sans', sans-serif;
+			src: url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
 		}
 	}
 `;
